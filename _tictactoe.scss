@@ -1,0 +1,134 @@
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    font-size: 1.5vw;
+    li{
+      list-style-type: none;
+      padding-top: 1vw;
+    }
+  }
+  
+  .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: .5vw;
+    width: 9vw;
+    height: 9vw;
+    color: #000000;
+    font-family: Century Gothic;
+  }
+  
+  .cell:hover{
+      background-color: #ccc;
+  }
+  
+  .gameModal {
+    display: none; 
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2f3542;
+  }
+  
+  .gameContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .historyModal{
+    display: none; 
+    position: fixed;
+    left: 70vw;
+    bottom: 18vw;
+    width: 20vw;
+    height: 50vh;
+    background-color: #2f3542;
+  }
+  
+  .historyContent {
+    bottom: 18vw;
+    left: 70vw;
+    width: 20vw;
+    height: 50vh;
+  }
+  
+  #gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 32vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  #board{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    width: 29vw;
+  }
+  
+  
+  #status{
+    padding: 2vw;
+    font-size: 2vw;
+    font-family: Century Gothic;
+  }
+  
+  #restart{
+    padding: .2vw 2vw;
+    font-size: 2vw;
+    font-family: Century Gothic;
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #historyTitle{
+    display: flex;
+    font-family: Century Gothic;
+    font-size: .5vw;
+    padding-top: 2vw;
+    cursor: pointer;
+  }
+  
+  #historyTitle:active{
+    color: #f1dac4;
+  }
+  
+  #buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 29vw;
+  }
+  
+  #previous{
+    padding: .2vw 2vw;
+    font-size: 2vw;
+    font-family: Century Gothic;
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #next{
+    padding: .2vw 2vw;
+    font-size: 2vw;
+    font-family: Century Gothic;
+    border-radius: 1vw;
+    border: none;
+    cursor: pointer;
+  }
+  

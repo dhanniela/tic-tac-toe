@@ -1,0 +1,37 @@
+@import 'tictactoe', 'modal';
+
+body{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f3542;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title{
+  position: relative;
+  display: inline-block;
+  // animation: bounce .3s ease infinite alternate;
+  font-family: Century Gothic;
+  font-size: 5vw;
+}
+
+#playButton{
+  padding: .2vw 2vw;
+  font-size: 2vw;
+  font-family: Century Gothic;
+  border-radius: 1vw;
+  border: none;
+  cursor: pointer;
+}

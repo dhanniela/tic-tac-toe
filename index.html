@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+  <div id="home">
+    <h1 id="title">Tic Tac Toe</h1>
+    <button id="playButton">Start</button>
+  </div>
+  
+  <div class="modal">
+    <div class="modalContent">
+      <div id="intro">
+        <h1 id="introTitle">choose a side</h1>
+        <div class="symbols">
+          <h1 id="xSymbol" onclick="firstPlayer('&times;')">&times;</h1>
+          <h1 id="oSymbol" onclick="firstPlayer('o')">o</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="gameModal">
+    <div class="gameContent">
+      <div id="gameContainer">
+        <div id="board"></div>
+        <div id="status">Game Starts!</div>
+        <div id="buttons">
+          <button onclick= "showPrev()" id="previous">&#8249;</button>
+          <button onclick="resetGame()" id="restart">Restart</button>
+          <button onclick= "showNext()" id="next">&#8250;</button>
+        </div>
+        <div id="historyTitle">
+          <h1 onclick= "showHistory()">Game History</h1>
+        </div>
+        <div class="historyModal">
+          <div class="historyContent">
+            <ul id="movesHistory">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

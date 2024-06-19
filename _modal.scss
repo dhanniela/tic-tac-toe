@@ -1,0 +1,61 @@
+@keyframes bounce {
+    100% {
+      top: -4vw;
+    }
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2f3542;
+  }
+  
+  .modalContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .symbols{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-family: Century Gothic;
+    font-size: 5vw;
+    width: 20vw;
+    h1{
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      cursor: pointer;
+    }
+    h1:hover{
+      animation: bounce .3s ease infinite alternate;
+    }
+  }
+  
+  #intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 32vw;
+    height: 50vh;
+    flex-direction: column;
+  }
+  
+  #introTitle{
+    font-family: Century Gothic;
+    font-size: 2vw;
+  }
+  
+  
+  #oSymbol{
+    margin-bottom: 2vw;
+  }
